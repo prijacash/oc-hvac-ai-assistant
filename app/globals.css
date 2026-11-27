@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f3eee4;
+  --ink: #1c1915;
+  --cream: #fffaf3;
+  --orange: #c4490b;
+  --orange-deep: #8a3208;
+  --teal: #0e4c56;
+  --teal-deep: #08343b;
+  --line: #e4d5c2;
+  --amber: #f6d7a2;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --color-orange: var(--orange);
+  --color-orange-deep: var(--orange-deep);
+  --color-teal: var(--teal);
+  --color-teal-deep: var(--teal-deep);
+  --color-line: var(--line);
+  --color-amber: var(--amber);
+  --font-sans: var(--font-outfit), "Segoe UI", sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 90% -10%, rgb(246 215 162 / 70%), transparent 55%),
+    radial-gradient(900px 420px at -10% 20%, rgb(14 76 86 / 8%), transparent 50%),
+    var(--paper);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
